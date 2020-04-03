@@ -63,6 +63,6 @@ app.post('/delete', (req, res) => {
     });
 });
 
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || port, function(){
     console.log("Server is vibing on port " + port);    
 })
